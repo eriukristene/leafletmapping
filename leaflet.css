@@ -622,4 +622,4 @@
 	border-right-color: #fff;
 	}
 
-#mapid {height: 750px}
+#mapid {height: 100%; width: 100%}
