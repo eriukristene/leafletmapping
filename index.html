@@ -33,8 +33,10 @@
     accessToken: 'pk.eyJ1Ijoiam9obmRveWxlcmFzbyIsImEiOiJjaXU5dHdmdjEwMDRnMm90bmhyZzQwNDY1In0.RUo-y6NWYDyaq8EN0-BsYg'
 }).addTo(mymap);
       
-      var marker = L.marker([29.9792, 31.1342]).addTo(mymap);
-      marker.bindPopup("<b>Hello world!</b><br>Great Pyramids of Giza").openPopup();
+      var popup = L.popup()
+    .setLatLng([29.9792, 31.1342])
+    .setContent("I am Pyramids of Giza")
+    .openOn(mymap);
       
     </script>
     
