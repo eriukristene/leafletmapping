@@ -621,5 +621,8 @@
 	margin-left: -12px;
 	border-right-color: #fff;
 	}
+html, body {
+height: 100%	
+}
 
-#mapid {height: 100vh}
+#mapid {height: 100%}
