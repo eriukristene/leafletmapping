@@ -33,15 +33,13 @@
     accessToken: 'pk.eyJ1Ijoiam9obmRveWxlcmFzbyIsImEiOiJjaXU5dHdmdjEwMDRnMm90bmhyZzQwNDY1In0.RUo-y6NWYDyaq8EN0-BsYg'
 }).addTo(mymap);
       
-      var popup = L.popup()
-    .setLatLng([29.9792, 31.1342])
-    .setContent("I am Pyramids of Giza")
-    .openOn(mymap);
+         var Gizamarker = L.marker([29.9792, 31.1342]).addTo(mymap);
+     Gizamarker.bindPopup("<b>Pyramids of Giza!</b><br>I am a popup.").openPopup();
       
       var Khanmarker = L.marker([30.0477, 31.2623]).addTo(mymap);
       Khanmarker.bindPopup("<b>Khan Al Khalili!</b><br>I am a popup.").openPopup();
     </script>
-    
+   
     
     <section class="main-content">
       <h3>
