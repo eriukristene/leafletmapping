@@ -26,11 +26,13 @@
 }).addTo(mymap);
       
      var ChristianMarker = L.icon ({
-       iconUrl: ‘cross.png’,                
+       iconUrl: ‘mosque.png’,                
        iconSize: [38,95],
        iconAnchor: [30.072222, 31.275556],
        popupAnchor: [-3, -76]
     });
+ 
+    L.marker([30.072222, 31.275556], {icon: ChristianIcon}).addTo(map);
      
      var Gizamarker = L.marker([29.9792, 31.1342]).addTo(mymap);
      Gizamarker.bindPopup("<b> The Great Pyramid of Giza! </b><br> The Great Pyramid was completed around 2560 BCE, as a tomb for Pharaoh Khufu. It was the tallest human-made structure in the world until 1311 CE, and stood at the heart of the Giza pyramid complex (which includes the Great Sphinx). Little is known about Khufu's reign, but his resting place is an object of fascination today. <br><br> <a href='http://en.wikipedia.org/wiki/Great_Pyramid_of_Giza' target='_newtab'> Wikipedia </a>");
@@ -41,7 +43,7 @@
       var Saqqaramarker = L.marker([29.87111, 31.21639]).addTo(mymap);
       Saqqaramarker.bindPopup("<b> Saqqara! </b><br> The First Dynasty of Egypt (ca. 3200 BCE) initiated this vast burial complex near Memphis, which remained the capital until around 2000 BCE. Even as the capital shifted, Saqqara remained a burial ground for nobles - and, for a time, an administrative and military centre. Its array of monuments were built across thousands of years, memorializing Pharoahs, state officials, Greek philosophers, and others. <br><br> <a href='https://en.wikipedia.org/wiki/Saqqara' target='_newtab'> Wikipedia </a>");
 
-      var SaintMarksCathedralmarker = L.marker([30.072222, 31.275556], {icon: ChristianMarker}).addTo(mymap);
+      var SaintMarksCathedralmarker = L.marker([30.072222, 31.275556]).addTo(mymap);
       SaintMarksCathedralmarker.bindPopup("<b> Saint Mark's Coptic Orthodox Cathedral! </b><br> Coptic Orthodox Christians have used the ground on which the cathedral stands for over a millenium. At different points in time it was variously the site of a cemetary and small churches. The Coptic Church built the cathedral in the mid-twentieth century, and in 1968 consecrated it as the seat of the Coptic Pope. Saint Mark was the founder of the Coptic Church and the namesake of several Coptic Cathedrals, including that which was the original seat of the Coptic Pope in Alexandria. Prior to the completion of the cathedral, the Catholic Pope returned some of Saint Mark's relics from Venice to Egypt; these now reside in the cathedral.<br><br> <a href='https://en.wikipedia.org/wiki/Saint_Mark%27s_Coptic_Orthodox_Cathedral' target='_newtab'> Wikipedia </a>");
       
       var SaintMercuriusChurchmarker = L.marker([30.016111, 31.385278]).addTo(mymap);
@@ -54,7 +56,7 @@
       ChurchOfStGeorgemarker.bindPopup("<b> The Church of St. George! </b><br> The Church of St. George was built in the 10th century CE (possibly earlier) on the ruins of a Roman tower, giving it its distinct round shape. It is the main Greek Orthodox Church in Egypt, and is the seat of the Greek Patriarchate of Alexandria. Yet, it is also regularly visited by Coptic Orthodox Christians and some Muslims. <br> <br> <a href='https://en.wikipedia.org/wiki/Church_of_St._George_(Cairo)' target='_newtab'> Wikipedia </a>");
       
        var Azharmarker = L.marker([30.0457, 31.2627]).addTo(mymap);
-      Azharmarker.bindPopup("<b>Al-Azhar Mosque! </b><br> TEXT<br><br> <a href='https://en.wikipedia.org/wiki/Al-Azhar_Mosque' target='_newtab'> Wikipedia </a>");
+      Azharmarker.bindPopup("<b>Al-Azhar Mosque! </b><br> The Fatimid Caliphate commissioned the mosque in 970 CE to serve its new capital city. Since the hiring of 35 scholars in 989 CE, it is the second oldest continuously run university in the world, and in 1961 was nationalized and designated as an independent university. As a Shiite institution its status has changed considerably during its history, which spans over a millenium, according to the changing leadership of Egypt. <br><br> <a href='https://en.wikipedia.org/wiki/Al-Azhar_Mosque' target='_newtab'> Wikipedia </a>");
       
     var MosqueofMuhammadAlimarker = L.marker([30.02861, 31.259722]).addTo(mymap);
       MosqueofMuhammadAlimarker.bindPopup("<b> Mosque of Muhammad Ali! </b><br>TEXT<br> <br> <a href='https://en.wikipedia.org/wiki/Mosque_of_Muhammad_Ali' target='_newtab'> Wikipedia </a>");
