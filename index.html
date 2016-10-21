@@ -25,11 +25,20 @@
     accessToken: 'pk.eyJ1Ijoiam9obmRveWxlcmFzbyIsImEiOiJjaXU5dHdmdjEwMDRnMm90bmhyZzQwNDY1In0.RUo-y6NWYDyaq8EN0-BsYg'
 }).addTo(mymap);
       
+    var ChristianIcon = L.icon({
+      iconUrl: ‘cross-2[1].png’,                
+      iconSize: [38, 95],
+      iconAnchor: [30.072222, 31.275556],
+      popupAnchor: [-3, -76]
+});
+
+      L.marker([30.072222, 31.275556], {icon: ChristianIcon}).addTo(map);
+      
      var Gizamarker = L.marker([29.9792, 31.1342]).addTo(mymap);
-     Gizamarker.bindPopup("<b> The Great Pyramid of Giza! </b><br> The Great Pyramid was completed around 2560 BCE, as a tomb for Pharaoh Khufu. It was the tallest human-made structure in the world until 1311 CE, and stood at the heart of the Giza pyramid complex (which includes the Great Sphinx). Little is known about Khufu's reign, but his resting place is an object of fascination today. <br> <a href='http://en.wikipedia.org/wiki/Great_Pyramid_of_Giza'> Wikipedia. </a>");
+     Gizamarker.bindPopup("<b> The Great Pyramid of Giza! </b><br> The Great Pyramid was completed around 2560 BCE, as a tomb for Pharaoh Khufu. It was the tallest human-made structure in the world until 1311 CE, and stood at the heart of the Giza pyramid complex (which includes the Great Sphinx). Little is known about Khufu's reign, but his resting place is an object of fascination today. <a href='http://en.wikipedia.org/wiki/Great_Pyramid_of_Giza'> Wikipedia. </a>");
       
          var Sphinxmarker = L.marker([29.9753, 31.1376]).addTo(mymap);
-      Sphinxmarker.bindPopup("<b> The Great Sphinx of Giza! </b><br> Sculpted with the body of a lion and the head of a human, the details and purpose of its construction are unknown. The human face of the sculpture is believed to be modeled on that of Pharoah Khafra, during whose reign the sculpture was likely made (ca. 2558-2532 BCE), and lions were commonly associated with kings.  <br> <a href='https://en.wikipedia.org/wiki/Great_Sphinx_of_Giza'> Wikipedia. </a>");
+      Sphinxmarker.bindPopup("<b> The Great Sphinx of Giza! </b><br> The details and purpose of the construction of the Great Sphinx are unknown. The human face of the sculpture is believed to be modeled on that of Pharoah Khafra, during whose reign the sculpture was likely made (ca. 2558-2532 BCE). <a href='https://en.wikipedia.org/wiki/Great_Sphinx_of_Giza'> Wikipedia. </a>");
        
       var Saqqaramarker = L.marker([29.87111, 31.21639]).addTo(mymap);
       Saqqaramarker.bindPopup("<b> Saqqara! </b><br>I am a popup.");
