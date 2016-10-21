@@ -24,14 +24,14 @@
     id: 'your.mapbox.project.id',
     accessToken: 'pk.eyJ1Ijoiam9obmRveWxlcmFzbyIsImEiOiJjaXU5dHdmdjEwMDRnMm90bmhyZzQwNDY1In0.RUo-y6NWYDyaq8EN0-BsYg'
 }).addTo(mymap);
-      
+     
      var ChristianIcon = L.icon ({
        iconUrl: 'cross.png',                
-       iconSize:     [38, 95], // size of the icon
-       iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+       iconSize:     [38, 95],
+       iconAnchor:   [22, 94], 
        popupAnchor:  [-3, -76]
     });
-     
+    
      var Gizamarker = L.marker([29.9792, 31.1342]).addTo(mymap);
      Gizamarker.bindPopup("<b> The Great Pyramid of Giza! </b><br> The Great Pyramid was completed around 2560 BCE, as a tomb for Pharaoh Khufu. It was the tallest human-made structure in the world until 1311 CE, and stood at the heart of the Giza pyramid complex (which includes the Great Sphinx). Little is known about Khufu's reign, but his resting place is an object of fascination today. <br><br> <a href='http://en.wikipedia.org/wiki/Great_Pyramid_of_Giza' target='_newtab'> Wikipedia </a>");
       
