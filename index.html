@@ -119,6 +119,18 @@
 	   
 	   var Muslim = L.layerGroup([Azharmarker, MosqueofMuhammadAlimarker, MosqueofAmrmarker, MosqueofIbnTulunmarker, MosqueMadrassaofSultanHassanmarker, AlRifaimarker, AlHusseinmarker]);
 	    
+	    var PharaonicOverlay = {
+    "Pharaonic": Pharaonic
+};
+	    var JewishOverlay = {
+    "Jewish": Jewish
+};
+	    var ChristianOverlay = {
+    "Christian": Christian
+};
+	    var MuslimOverlay = {
+    "Muslim": Muslim
+};
 	    L.control.layers(Pharaonic, Jewish, Christian, Muslim).addTo(map);
     </script>
     </body>
