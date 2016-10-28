@@ -110,6 +110,16 @@
       
        var BenEzraSynagoguemarker = L.marker([30.005794, 31.231022], {icon: SynagogueIcon}).addTo(mymap);
       BenEzraSynagoguemarker.bindPopup("<b> Ben Ezra Synagogue! </b><br> Ben Ezra Synagogue has occupied three distinct buildings. It moved to its current site - a former church - in the 1890s. It occupied its original site at least as early as 882 CE, and may be pre-Islamic - but little is known about its history prior to the 1012 CE when the Fatimid Caliph ordered all Christian and Jewish places of worship destroyed. Today, the Jewish community in Egypt is considerably diminished, having numbered about 80,000 people in the early 20th century yet today includes fewer than a dozen people of Egyptian ancestry residing in Cairo. Accordingly, the Ben Ezra Synagogue is now a tourist attraction and museum, rather than a functioning congregation. <br> <br> <a href='https://en.wikipedia.org/wiki/Ben_Ezra_Synagogue' target='_newtab'> Wikipedia </a>");//.openPopup();
+	    
+	   var Pharaonic = L.layerGroup([Gizamarker, Sphinxmarker, Saqqaramarker]);
+	   
+	   var Jewish = L.layerGroup([BenEzraSynagoguemarker]);
+	   
+	   var Christian = L.layerGroup([ChurchOfStGeorgemarker, HangingChurchmarker, SaintMercuriusChurchmarker, SaintMarksCathedralmarker]);
+	   
+	   var Muslim = L.layerGroup([Azharmarker, MosqueofMuhammadAlimarker, MosqueofAmrmarker, MosqueofIbnTulunmarker, MosqueMadrassaofSultanHassanmarker, AlRifaimarker, AlHusseinmarker]);
+	    
+	    L.control.layers(Pharaonic, Jewish, Christian, Muslim).addTo(map);
     </script>
     </body>
 </html>
