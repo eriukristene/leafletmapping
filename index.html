@@ -133,6 +133,7 @@
     //"Muslim": Muslim
 	// }
 	    //L.control.layers(PharaonicOverlay, JewishOverlay, ChristianOverlay, MuslimOverlay).addTo(mymap);
+	    
 	    var overlays = {
 		 "Pharaonic": Pharaonic,
 		    "Jewish": Jewish,
@@ -142,17 +143,7 @@
 	   
 	    var layerControl = L.control.layers(null, overlays);
 	    mymap.addControl(layerControl);
-	    
-	    function change(){
-		for (var i = 0; i < checkboxes.length; i++ {
-		     if (checkboxes[i].checked {
-		     mymap.addLayer(window[checkboxes[i].id]);
-		    else {
-		    mymap.removeLayer(window[overlays]);
-		    }
-		     }
-		     }
-	    }
+	  
 	    
 	    
     </script>
