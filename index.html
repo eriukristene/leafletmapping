@@ -139,12 +139,20 @@
 		      "Christian": Christian,
 		        "Muslim": Muslim
 	    }
-	    
-	    
+	   
 	    var layerControl = L.control.layers(null, overlays);
 	    mymap.addControl(layerControl);
 	    
-	    
+	    function change(){
+		for (var i = 0; i < checkboxes.length; i++ {
+		     if (checkboxes[i].checked {
+		     mymap.addLayer(window[checkboxes[i].id]);
+		    else {
+		    mymap.removeLayer(window[checkboxes[i].id]);
+		    }
+		     }
+		     }
+	    }
 	    
 	    
     </script>
