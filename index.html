@@ -119,20 +119,30 @@
 	   
 	   var Muslim = L.layerGroup([Azharmarker, MosqueofMuhammadAlimarker, MosqueofAmrmarker, MosqueofIbnTulunmarker, MosqueMadrassaofSultanHassanmarker, AlRifaimarker, AlHusseinmarker]);
 	    
-	    var PharaonicOverlay = {
-    "Pharaonic": Pharaonic
-};
-	    var MuslimOverlay = {
-    "Muslim": Muslim
-};		    
-	    var JewishOverlay = {
-    "Jewish": Jewish
-};
-	    var ChristianOverlay = {
-    "Christian": Christian
+	    //(var PharaonicOverlay = {
+    //"Pharaonic": Pharaonic
+//};	    
+	    //var JewishOverlay = {
+    //"Jewish": Jewish
+//};
+	    //var ChristianOverlay = {
+    //"Christian": Christian
 	    
-};    
-	    L.control.layers(PharaonicOverlay, MuslimOverlay, JewishOverlay, ChristianOverlay).addTo(mymap);
+//};    
+	 //var MuslimOverlay = {
+    //"Muslim": Muslim
+	// }
+	    //L.control.layers(PharaonicOverlay, JewishOverlay, ChristianOverlay, MuslimOverlay).addTo(mymap);
+	    var overlays = {
+		 "Pharaonic": Pharaonic,
+		    "Jewish": Jewish,
+		      "Christian": Christian,
+		        "Muslim": Muslim
+	    }
+	    
+	    var layerControl = L.control.layers(null, overlays);
+	    map.addControl(layerControl);
+	    
 	    
 	    
 	    
