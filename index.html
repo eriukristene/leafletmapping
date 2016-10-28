@@ -39,21 +39,21 @@
        popupAnchor: [-3, -76]
     });
 
-	    var MosqueIcon = L.icon ({
+      var MosqueIcon = L.icon ({
        iconUrl: 'mosque.png',                
        iconSize: [32,37],
        iconAnchor: [30.072222, 31.275556],
        popupAnchor: [-3, -76]
     });
 
-	    var PrayerIcon = L.icon ({
+      var PrayerIcon = L.icon ({
        iconUrl: 'prayer.png',                
        iconSize: [32,37],
        iconAnchor: [30.072222, 31.275556],
        popupAnchor: [-3, -76]
     });
 	
-	    var SynagogueIcon = L.icon ({
+      var SynagogueIcon = L.icon ({
        iconUrl: 'synagogue.png',                
        iconSize: [32,37],
        iconAnchor: [30.072222, 31.275556],
@@ -68,6 +68,7 @@
        
       var Saqqaramarker = L.marker([29.87111, 31.21639]).addTo(mymap);
       Saqqaramarker.bindPopup("<b> Saqqara! </b><br> The First Dynasty of Egypt (ca. 3200 BCE) initiated this vast burial complex near Memphis, which remained the capital until around 2000 BCE. Even as the capital shifted, Saqqara remained a burial ground for nobles - and, for a time, an administrative and military centre. Its array of monuments were built across thousands of years, memorializing Pharoahs, state officials, Greek philosophers, and others. <br><br> <a href='https://en.wikipedia.org/wiki/Saqqara' target='_newtab'> Wikipedia </a>");
+	    
       var SaintMarksCathedralmarker = L.marker([30.072222, 31.275556], {icon: ChristianIcon}).addTo(mymap);
       SaintMarksCathedralmarker.bindPopup("<b> Saint Mark's Coptic Orthodox Cathedral! </b><br> Coptic Orthodox Christians have used the ground on which the cathedral stands for over a millenium. At different points in time it was variously the site of a cemetary and small churches. The Coptic Church built the cathedral in the mid-twentieth century, and in 1968 consecrated it as the seat of the Coptic Pope. Saint Mark was the founder of the Coptic Church and the namesake of several Coptic Cathedrals, including that which was the original seat of the Coptic Pope in Alexandria. Prior to the completion of the cathedral, the Catholic Pope returned some of Saint Mark's relics from Venice to Egypt; these now reside in the cathedral.<br><br> <a href='https://en.wikipedia.org/wiki/Saint_Mark%27s_Coptic_Orthodox_Cathedral' target='_newtab'> Wikipedia </a>");
       
@@ -80,28 +81,28 @@
        var ChurchOfStGeorgemarker = L.marker([30.006387, 31.229952]).addTo(mymap);
       ChurchOfStGeorgemarker.bindPopup("<b> The Church of St. George! </b><br> The Church of St. George was built in the 10th century CE (possibly earlier) on the ruins of a Roman tower, giving it its distinct round shape. It is the main Greek Orthodox Church in Egypt, and is the seat of the Greek Patriarchate of Alexandria. Yet, it is also regularly visited by Coptic Orthodox Christians and some Muslims. <br> <br> <a href='https://en.wikipedia.org/wiki/Church_of_St._George_(Cairo)' target='_newtab'> Wikipedia </a>");
       
-       var Azharmarker = L.marker([30.0457, 31.2627]).addTo(mymap);
+       var Azharmarker = L.marker([30.0457, 31.2627], {icon: MosqueIcon}).addTo(mymap);
       Azharmarker.bindPopup("<b>Al-Azhar Mosque! </b><br> The Fatimid Caliphate commissioned the mosque in 970 CE to serve its new capital city. Since the hiring of 35 scholars in 989 CE, it is the second oldest continuously run university in the world, and in 1961 was nationalized and designated as an independent university. As a Shiite institution its status has changed considerably during its history, which spans over a millenium, according to the changing leadership of Egypt. <br><br> <a href='https://en.wikipedia.org/wiki/Al-Azhar_Mosque' target='_newtab'> Wikipedia </a>");
       
-    var MosqueofMuhammadAlimarker = L.marker([30.02861, 31.259722]).addTo(mymap);
+    var MosqueofMuhammadAlimarker = L.marker([30.02861, 31.259722], {icon: MosqueIcon}).addTo(mymap);
       MosqueofMuhammadAlimarker.bindPopup("<b> Mosque of Muhammad Ali! </b><br>TEXT<br> <br> <a href='https://en.wikipedia.org/wiki/Mosque_of_Muhammad_Ali' target='_newtab'> Wikipedia </a>");
       
-      var MosqueofAmrmarker = L.marker([30.0101, 31.2331]).addTo(mymap);
+      var MosqueofAmrmarker = L.marker([30.0101, 31.2331], {icon: MosqueIcon}).addTo(mymap);
       MosqueofAmrmarker.bindPopup("<b> Mosque of Amr ibn al-As! </b><br> TEXT<br><br> <a href='https://en.wikipedia.org/wiki/Mosque_of_Amr_ibn_al-As' target='_newtab'> Wikipedia </a>");
       
-      var MosqueofIbnTulunmarker = L.marker([30.028889, 31.249444]).addTo(mymap);
+      var MosqueofIbnTulunmarker = L.marker([30.028889, 31.249444], {icon: MosqueIcon}).addTo(mymap);
       MosqueofIbnTulunmarker.bindPopup("<b> Mosque of Ibn Tulun! </b><br> TEXT<br><br> <a href='https://en.wikipedia.org/wiki/Mosque_of_Ibn_Tulun' target='_newtab'> Wikipedia </a>");
       
-       var MosqueMadrassaofSultanHassanmarker = L.marker([30.0323, 31.2562]).addTo(mymap);
+       var MosqueMadrassaofSultanHassanmarker = L.marker([30.0323, 31.2562], {icon: MosqueIcon}).addTo(mymap);
       MosqueMadrassaofSultanHassanmarker.bindPopup("<b> Mosque-Madrassa of Sultan Hassan! </b><br>TEXT<br> <br> <a href='https://en.wikipedia.org/wiki/Mosque-Madrassa_of_Sultan_Hassan' target='_newtab'> Wikipedia </a>");
       
-      var AlRifaimarker = L.marker([30.154564, 31.310406]).addTo(mymap);
+      var AlRifaimarker = L.marker([30.154564, 31.310406], {icon: MosqueIcon}).addTo(mymap);
       AlRifaimarker.bindPopup("<b> Al-Rifa'i Mosque! </b><br>TEXT<br> <br> <a href='https://en.wikipedia.org/wiki/Al-Rifa%27i_Mosque' target='_newtab'> Wikipedia </a>");
       
-      var AlHusseinmarker = L.marker([30.047778, 31.263056]).addTo(mymap);
+      var AlHusseinmarker = L.marker([30.047778, 31.263056], {icon: MosqueIcon}).addTo(mymap);
       AlHusseinmarker.bindPopup("<b> Al-Hussein Mosque! </b><br> TEXT<br><br> <a href='https://en.wikipedia.org/wiki/Al-Hussein_Mosque' target='_newtab'> Wikipedia </a>");
       
-       var BenEzraSynagoguemarker = L.marker([30.005794, 31.231022]).addTo(mymap);
+       var BenEzraSynagoguemarker = L.marker([30.005794, 31.231022], {icon: SynagogueIcon}).addTo(mymap);
       BenEzraSynagoguemarker.bindPopup("<b> Ben Ezra Synagogue! </b><br>TEXT<br> <br> <a href='https://en.wikipedia.org/wiki/Ben_Ezra_Synagogue' target='_newtab'> Wikipedia </a>");//.openPopup();
     </script>
     </body>
