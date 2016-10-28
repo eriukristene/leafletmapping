@@ -122,16 +122,17 @@
 	    var PharaonicOverlay = {
     "Pharaonic": Pharaonic
 };
+	    var MuslimOverlay = {
+    "Muslim": Muslim
+};		    
 	    var JewishOverlay = {
     "Jewish": Jewish
 };
 	    var ChristianOverlay = {
     "Christian": Christian
+	    
 };
-	    var MuslimOverlay = {
-    "Muslim": Muslim
-};
-	    L.control.layers(PharaonicOverlay, JewishOverlay, ChristianOverlay, MuslimOverlay).addTo(mymap);
+	    L.control.layers(PharaonicOverlay, MuslimOverlay, JewishOverlay, ChristianOverlay).addTo(mymap);
     </script>
     </body>
 </html>
