@@ -140,6 +140,8 @@
 		        "Muslim": Muslim
 	    }
 	    
+	    mymap.removeLayer(overlays);
+	    
 	    var layerControl = L.control.layers(null, overlays);
 	    mymap.addControl(layerControl);
 	    
